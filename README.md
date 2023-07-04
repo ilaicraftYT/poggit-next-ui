@@ -1,38 +1,19 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# <img src="https://poggit.pmmp.io/res/poggit-icon.png" alt="Poggit" width="28" /> on Next.js
 
-## Getting Started
+We can agree that Poggit's UI isn't bad, but it's also not the best.
 
-First, run the development server:
+So I decided to make a better version of poggit with [MantineUI](https://mantine.dev), which reduced a lot the work that I had to do with design & programming.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
+Feel free to explore & contribute!
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+> **Note** <br>
+> This doesn't has the full functionality of poggit so it isn't a replacement. It still relies on poggit's API and as SOFe already said it [on this comment](https://github.com/poggit/poggit/issues/337#issuecomment-1610718902), only the releases endpoint is available for external websites.
+> A full replacement will require a lot of work which of course I'm not going to do, probably.
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+## Tech Stack
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
-
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
-
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+* [Next.js](https://nextjs.org) for everything ❤
+* [React](https://react.dev) for everything ❤
+* [TailwindCSS](https://tailwindcss.com) as a CSS utility (margins, paddings)
+* [MantineUI](https://mantine.dev) for everything around UI.
+* [SWR](https://swr.vercel.app/) (Stale-While-Revalidate RFC) for data fetching (actual fetching, caching, revalidating).
