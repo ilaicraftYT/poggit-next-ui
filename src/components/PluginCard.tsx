@@ -140,7 +140,7 @@ export default function PluginCard({
       ) : (
         <div className="flex">
           <IconCalendarTime width={20} height={20} className="mr-2" />
-          Submitted since:{" "}
+          Since:{" "}
           {new Date((submissionDate ?? 1) * 1000).toLocaleDateString(
             undefined,
             {

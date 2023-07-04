@@ -121,15 +121,7 @@ export function Navbar({
             className={classes.search}
             placeholder="Search"
             icon={<IconSearch size="1rem" stroke={1.5} />}
-            data={[
-              "React",
-              "Angular",
-              "Vue",
-              "Next.js",
-              "Riot.js",
-              "Svelte",
-              "Blitz.js",
-            ]}
+            data={[]}
           />
         </Group>
       </div>
@@ -143,9 +135,8 @@ export default function Layout({ children }: { children: ReactNode }) {
       header={
         <Navbar
           links={[
-            { link: "#", label: "Releases" },
-            { link: "#", label: "CI" },
-            { link: "#", label: "Original" },
+            { link: "/releases", label: "Releases" },
+            { link: "https://poggit.pmmp.io", label: "Original" },
           ]}
         />
       }
